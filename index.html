@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Curly Hair</title>
+<link href="estilo.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ .galeria{
+    width: 920px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto{
+	position: absolute;
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+	25%{
+		opacity: 1;
+		transform:scale(1.1,);
+	}
+	50%{
+        opacity: 0;  
+	}
+}
+.foto:nth-child(1){	
+}
+.foto:nth-child(2){
+      animation-delay: 5s;
+}
+.foto:nth-child(3){
+	animation-delay: 10s;
+}
+.foto:nth-child(4){
+	animation-delay: 15s;
+}
+
+
+
+	
+
+
+</style>
+</head>
+
+<body>
+
+    <div id="total">
+	
+    <div id="topo">
+    	
+        
+        <div id="logo">
+        	<a href="index.html"><img src="img/logopreta.png" width=500 height=160 /></a>
+        </div>
+        </div>
+		
+		
+        <div id="form">
+		<form action="validacao.php" method="post">
+		<div class="box">
+		<h1>Login</h1>
+			<label for="txUsuario">Usuário</label>
+			<input type="text" name="usuario" id="txUsuario" maxlength="25" />
+			<label for="txSenha">Senha</label>
+			<input type="text" name="senha" id="txSenha" />
+
+			<input type="submit" value="Entrar" />
+			<input type="submit" value="Cadastre-se" formaction="cadastro.html">
+		</form> </div> 
+		</div>
+		
+		
+        <div id="menu">
+        	<a href="#">Inicio</a>
+            <a href="produtos.html">Produtos! </a>  
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="contato.html">Contato</a>
+			<a href="tipos.html">Tipos de Cabelo</a>
+        </div>
+		
+    </div>
+    
+    <div id="container">
+    	
+       <section class="galeria">
+       	             <img class="foto" src="img/banner.jpg" width="920" height="450"/>     	           
+       	             <img class="foto" src="img/bannerproduto.jpg" width="920" height="450" />
+       	              <img class="foto" src="img/bannermen.jpg" width="920" height="450" />
+       	              
+       	             
+       	         
+       </section>
+        
+        <div id="conteudo">
+        	
+      
+
+        <center><img src="img/destaque.jpg" height="40" width="920"></center> 	
+        </div>
+
+     
+       <div id="box1">
+       	<div class="zoom">
+       <img src="img/image1.jpg" class="img-responsive"//>
+       <center><h4>Kit Skafe Natu Hair - Bomba e Vitaminas<h4><br><br></center>
+       <center><p>R$ 115,99<p></center>
+	   <center><a href="cadastro.html"><img src=img/botao.png  width=100 height=35</center></a>
+       </div></div>
+
+		
+        
+        <div id="box2">	
+        <div class="zoom">
+        <img src="imgsalon/img8.jpg" class="img-responsive"/>
+        <center><h4>Kit Salon Line - SOS Bomba de Vitaminas Transição Capilar<h4><br></center>
+		 <center><p>R$ 120,50<p></center>
+		 <center><a href="cadastro.html"><img src=img/botao.png  width=100 height=35 </center></a>
+         </div></div>
+		
+		<div id="box3">	
+		<div class="zoom">
+        <img src="imgsalon/img7.jpg" class="img-responsive"/>
+        <center><h4>Kit Salon Line - SOS Bomba de Vitaminas Explosão de Crescimento<h4><br></center>
+		<center><p>R$ 120,50<p></center>
+		<center><a href="cadastro.html"><img src=img/botao.png  width=100 height=35 </center></a>
+	    </div></div>
+
+			
+		<div id="box4">
+		<div class="zoom">	
+        <img src="imgsalon/img37.jpg" width=200 height=200  class="img-responsive"s/>
+        <center><h4>Kit Salon Line - Tratamento Para Abalar!<h4><br><br></center>
+		<center><p>R$ 30.50<p></center>
+		<center><a href="cadastro.html"><img src=img/botao.png  width=100 height=35 </center></a>
+	    </div></div>
+
+	   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	  
+        <img src="img/bord.jpg" height="7" width="920" >
+		<br><br>
+       
+      <img src="imgsalon/topodendo.png" width="370" height="400"><iframe width="550" height="400" src="https://www.youtube.com/embed/fkN7tLFeW2M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <br><br><br>
+            <img src="imgsalon/salonline.jpg" height="40" width="920" >
+            <iframe width="550" height="400" src="https://www.youtube.com/embed/R53vwgxQh5U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><a href="salonline.html"><img src="imgsalon/logo-salon.png" width="320" height="350"></a>
+
+
+       <div id="rodape"> 
+		<img src="img/rodapeimg.jpg" height="40" width="920" >
+		</div>
+
+		
+		
+
+       </div>
+</body>
+</html>

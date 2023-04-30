@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Curly Hair</title>
+<link href="contato.css" rel="stylesheet" type="text/css" />
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ .galeria{
+    width: 920px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto{
+    position: absolute;
+    opacity: 0;
+    animation-name: animacao;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+    25%{
+        opacity: 1;
+        transform:scale(1.1,1.1);
+    }
+    50%{
+        opacity: 0;  
+    }
+}
+.foto:nth-child(1){ 
+}
+.foto:nth-child(2){
+      animation-delay: 5s;
+}
+.foto:nth-child(3){
+    animation-delay: 10s;
+}
+
+
+
+
+    
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="total">
+	
+    <div id="topo">
+    	
+        <div id="logo">
+        	<a href="index.html"><img src="img/logopreta.png" width=500 height=160 /></a>
+        </div>
+		<div id="form">
+		
+		</form>
+		</div>
+        
+        <div id="menu">
+        	<a href="index.html">Inicio</a>
+            <a href="produtos.html">Produtos!</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="contato.html">Contato</a>
+			<a href="tipos.html">Tipos de Cabelo</a>
+        </div>
+
+        <div id="container">
+    <center><img src="img/bannercontato.jpg" height="450" width="920" ></center>
+             <div id="container">
+    		
+            <div id="conteudo">
+                <img src="img/lojabord.jpg" height="40" width="920" >
+
+                <section class="galeria">
+                     <img class="foto" src="img/local.jpg"width="920" height="450"/>                   
+                     <img class="foto" src="img/local2.jpg" width="920" height="450" />
+                     <img class="foto" src="img/local3.jpg" width="920" height="450" /> </section>
+                     <center><img src="img/ende.jpg" height="300" width="920" >
+
+                       <div id="rodape"> 
+        <img src="img/roda.jpg" height="40" width="920" >
+        </div>
+                    
+      
+
+         
+
+   
+        
+    	
+
+   
+	 
+            
+            
+       
+    </div> </div></div>
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+Modo de usar
+
+mysql_connect("nome_do_servidor", "usuario_banco", "senha_banco");
+
+se voce nao criou nenhum usuario o usuario padrão do mysql é root e senha em branco
+
+se der esse erro:
+
+Warning: mysql_connect() [function.mysql-connect]: Access denied for user 'root'@'localhost' (using password: NO) 
+
+é porque seu banco de dados esta com usuario e senha, entao é só mudar mudar nos scripts onde esta root coloque o usuario
+e na senha em branco coloque a senha
+
+lembre-se esse é um script bem simples mesmo, só para aprender a cadastrar, editar, excluir e listar dados.

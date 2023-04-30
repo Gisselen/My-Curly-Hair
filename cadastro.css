@@ -1,0 +1,359 @@
+
+body{
+	background-color:#f0eff1;
+	background-repeat:repeat-x; /*repete apenas na horizontal*/
+	margin:0 0 15px 0;
+	font-family:"SF New Republic SC";
+	color:#000000;
+	
+}
+
+img{
+	border:none;
+}
+
+h2{
+	text-transform: ; /*texto em maiusculo*/
+	letter-spacing: 0px; /*espaçamento entre letras*/
+	word-spacing: 1px; /*espaçamento entre palavras*/
+	background-color: #ffffff;
+	color: #e5efe0;
+	float:center;
+}
+
+
+#topo{
+	width:960px;
+	height:100px;
+	
+	margin:auto;
+}
+
+#logo{
+	width:321px;
+	height:95px;
+	position:relative;
+	top:50px;
+	left:240px;
+}
+
+#menu{
+	float:right;
+	margin-top:120px;
+	margin-right:360px;
+}
+
+#menu a{
+	color:#000;
+	font-weight:;
+	font-family:SF New Republic SC;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px 20px 10px 20px;
+}
+
+#menu a:hover{
+	font-weight:bold;
+	color:#fff;
+	background-color:#000;
+}
+
+.menu li{
+position:relative; 
+float:right; 
+border-right:1px solid #c0c0c0; 
+}
+
+.menu li a{
+color:#333; 
+text-decoration:none; 
+padding:10px 20px 10px 20px;
+display:block;
+}
+ 
+.menu li a:hover{
+background:#333; 
+color:#fff; 
+-moz-box-shadow:0 3px 10px 0 #CCC; 
+-webkit-box-shadow:0 3px 10px 0 #ccc; 
+text-shadow:0px 0px 5px #fff; 
+}
+
+.menu li  ul{
+position:absolute; 
+top:25px; 
+left:0;
+background-color:#fff; 
+display:none;
+} 
+
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+border:1px solid #c0c0c0; 
+display:block; 
+width:100px;
+}
+
+#menu2{
+	float:left;
+	margin-top:0px;
+	background-image:url(img/fundopreto.jpg);
+	width:920px;
+	height:55px;
+}
+
+
+#menu2 a{
+	color:#ffffff;
+	font-family:Tunga;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px 20px 10px 20px;
+}
+
+#menu2 a:hover{
+	font-weight:none;
+	color:#000000;
+	background-color:#bf0303;
+}
+
+#container{
+	width:920px;
+	height:auto;
+	display:table;
+	margin:10px auto;
+	background-color:#00000;
+	background-color:#FFFFFF;
+	
+}
+
+#banner{
+	width:920px;
+	height:370px;
+	/*background-color:#666666;*/
+	float:left;
+}
+
+#conteudo{
+	
+	width:920px;
+	height:50px;
+	float:left;
+	/**background-color:#CCCCCC;*/
+
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+
+h1{
+    padding: 0;
+    color: #000;
+    font-size: 25px;
+    font-family:SF New Republic SC;
+}
+
+h3{
+	font-family:calibri;
+	font-size:16px;
+}
+
+h4{
+	font-size:14px;
+	margin-top:10px;
+}
+
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box11,#box12,#box13{
+	margin-left:5px;
+	width:200px;
+	min-height:200px;
+	float:left;
+	border: 1px solid #000;
+	padding:0px;
+
+	/*background-color:#666666;*/
+}
+
+#box2{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box3{
+margin-left:35px;
+margin-bottom:10px;
+	
+}
+
+#box4{
+margin-left:35px;
+margin-bottom:10px;
+
+}
+
+#box5{
+margin-bottom:10px;
+margin-bottom:10px;
+}
+
+#box6{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box7{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box8{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box9{
+margin-bottom:10px;
+}
+
+#box11{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box12{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box13{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+
+
+.saibamais{
+	color:#7EBF0F;
+	font-size:12px;
+	text-decoration:none;
+}
+
+#form{
+	font-size:10px;
+	color:#000;
+	font-family:SF New Republic SC;
+	float:right;
+	margin-top:-105px;
+	margin-right:-5px;	
+
+	color:#000;
+	text-decoration:none;
+	display:inline-block;
+	padding: 10px;
+}
+
+input{ /*formata os inputs do tipo text*/
+	position: relative;
+	display: inline-block;
+	font-size: 9px;
+	box-sizing: border-box;
+	transition: .5s;
+}
+input[type="text"]{
+	background: #e4e4e3;
+	width: 175px;
+	height: 25px;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	border-radius: 40px 40px 40px 40px;
+}
+input[type="submit"]{
+	position: relative;
+	font-size:15px;
+	border-radius: 45px 45px 45px 45px;
+	width: 90px;
+	height: 30px;
+	border:none;
+	outline: none;
+	cursor: pointer;
+	background: #d50505;
+	color: #fff;
+}
+input[type="submit"]:hover{
+	background: #000;
+}
+
+#rodape{
+    width:920px;
+	height:40px;
+	background-color:#000000;
+	float:left;	
+	margin-top:20px;
+}
+.fundo{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url("img/banner06.jpg")center center no-repeat;
+	background-size: cover;
+
+}
+.cadastro{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform:translate(-50%,-50%);
+	background: #fff;
+	border-radius: 40px 40px 40px 40px;
+	padding: 35px;
+
+}
+.zoom{
+	overflow:hidden;
+}
+.zoom img{
+	max-width:100%;
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+.zoom:hover img{
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+}
+.marcatexto{ /*class, diferente do id, a classe pode ser chamada várias vezes no mesmo html*/
+	background-color: #bf0303;
+	font-style: italic; /*italico*/
+	font-weight: bold; /*negrito*/
+}
+#menu3{
+	float:left;
+	margin-top:0px;
+	background-image:url(img/fundopreto.jpg);
+	width:920px;
+	height:55px;
+}
+
+
+#menu3 a{
+	color:#ffffff;
+	font-family:Arial;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px 20px 10px 20px;
+
+}
+
+#menu3 a:hover{
+	font-weight:none;
+	color:#bf0303;
+	background-color:#ffffff;
+	
+}

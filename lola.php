@@ -1,0 +1,314 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My Curly Hair</title>
+<link href="produtos.css" rel="stylesheet" type="text/css" />
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+ .galeria{
+    width: 920px;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto{
+	position: absolute;
+	opacity: 0;
+	animation-name: animacao;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animacao{
+	25%{
+		opacity: 1;
+		
+	}
+	50%{
+        opacity: 0;  
+	}
+}
+.foto:nth-child(1){	
+}
+.foto:nth-child(2){
+      animation-delay: 5s;
+}
+.foto:nth-child(3){
+	animation-delay: 10s;
+}
+.foto:nth-child(4){
+	animation-delay: 15s;
+}
+.foto:nth-child(5){
+	animation-delay: 20s;
+}
+.foto:nth-child(6){
+	animation-delay: 25s;
+}
+
+
+	
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="total">
+	
+    <div id="topo">
+    	
+        <div id="logo">
+        	<a href="index.html"><img src="img/logopreta.png" width=500 height=160 /></a>
+        </div>
+        <div id="form">
+		</div>
+        <div id="menu">
+        	<a href="index.html">Inicio</a>
+            <a href="produtos.html">Produtos!</a>
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="contato.html">Contato</a>
+			<a href="tipos.html">Tipos de Cabelo</a>
+        </div>
+    
+    </div>
+    
+    <div id="container">
+
+    	<section class="galeria">
+       	             <img class="foto" src="lola/banner.jpg" width="920" height="450"/>     	  
+       	             <img class="foto" src="lola/banner1.jpg" width="920" height="450" />
+       	             <img class="foto" src="lola/banner2.jpg" width="920" height="450" />
+       	             <img class="foto" src="lola/banner3.jpg" width="920" height="450" />
+       	             <img class="foto" src="lola/banner4.jpg" width="920" height="450" />
+       	              <img class="foto" src="lola/banner5.jpg" width="920" height="450" />
+       	            
+
+
+
+       </section>
+    	
+
+			<div id="conteudo">
+        	<div id="menu2">
+            <a href="produtos.html">Produtos</a>
+        	<a href="novex.html">Novex</a>
+            <a href="salonline.html">Salon Line</a>
+            <a href="hidratacao.html">Hidratação</a>
+			<a href="kits.html">Kits</a>
+			<a href="assesorios.html">Assesórios</a>
+			<a href="lola.html">Lola</a>
+            
+        </div>
+			</div>
+		
+		<div id="conteudo">
+		<img src="lola/lolabord.jpg" height="40" width="920" >
+   
+			</div>
+		
+		    
+        <div id="box1">
+        <div class="zoom">
+        <img src="lola/img1.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Be Happy - Shampoo,Condicionador e Creme de Pentear<h4></center><br>
+		<center><p>R$ 108,83<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=109";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		
+        </div></div>
+        
+        <div id="box2">
+        <div class="zoom">
+        <img src="lola/img3.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Meu Cacho Minha Vida - Shampoo e Condicionador<h4><br><br></center>
+		<center><p>R$ 65,80<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=110";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+        </div></div>
+
+		<div id="box3">
+		<div class="zoom">
+        <img src="lola/img6.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Curly Wurly - Shampoo,Condicionador e Máscara<h4></center><br>
+		<center><p>R$ 119,90<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=111";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		
+		</div></div>
+			
+		<div id="box4">
+		<div class="zoom">
+        <img src="lola/img8.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Creoula - Shampoo,Condicionador e Creme de Pentear<h4></center><br>
+		<center><p>R$ 89,90<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=112";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+	    </div></div>
+
+		<div id="box5">
+		<div class="zoom">
+        <img src="lola/img10.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Morte Súbita - Shampoo+Condicionador<h4><br><br></center>
+		<center><p>R$ 60,00<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=113";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+		<div id="box6">
+		<div class="zoom">
+        <img src="lola/img11.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Creoula - Shampoo,Condicionador e Máscara<h4></center><br>
+		<center><p>R$ 122,00<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=114";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+		<div id="box7">
+		<div class="zoom">
+        <img src="lola/img13.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Volumão - Shampoo,Condicionador e Spray<h4></center><br>
+		<center><p>R$ 175,90<p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=115";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+		<div id="box8">
+		<div class="zoom">
+        <img src="lola/img7.png" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Morte Súbita Reparação Total- Shampoo Sólido,Máscara e Spray<h4></center><br>
+		<center><p>R$ 239,98 <p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=116";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+		<div id="box9">
+		<div class="zoom">
+        <img src="lola/img4.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Tarja Preta - Queratina Liquida+Máscara Restauradora<h4></center><br>
+		<center><p>R$ 68,90 <p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=117";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+		<div id="box2">
+		<div class="zoom">
+        <img src="lola/img15.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Rebelde com Causa - Shampoo e Máscara<h4><br><br></center>
+		<center><p>R$ 66,00 <p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=118";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+		<div id="box2">
+		<div class="zoom">
+        <img src="lola/img16.jpg" width=200 height=214 class="img-responsive"/>
+        <center><h4>Kit Ultra Baphônico - Cronograma Capilar + Cofrinho<h4><br></center>
+		<center><p>R$ 58,50 <p></center>
+		<?php
+      require("conexao.php");
+       $sql = "SELECT * FROM produtos where id=119";
+        $query = $mysqli->query($sql);
+      while($ln =mysqli_fetch_array($query)){
+         echo '<a href="carrinho.php?acao=add&id='.$ln['id'].'"><center><img src=img/botao.png  width=100 height=35></center></a>';
+         
+         }
+         ?>
+		</div></div>
+
+
+
+	
+
+         
+
+	      
+
+            
+        </div>
+    
+</div>
+
+</body>
+</html>
+			
+			
+			
+			

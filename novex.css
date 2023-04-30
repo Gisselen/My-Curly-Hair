@@ -1,0 +1,263 @@
+body{
+	background-color:#f0eff1;
+	background-repeat:repeat-x; /*repete apenas na horizontal*/
+	margin:0 0 15px 0;
+	font-family:"SF New Republic SC";
+	color:#000000;
+	
+}
+
+img{
+	border:none;
+}
+
+h2{
+	text-transform: ; /*texto em maiusculo*/
+	letter-spacing: 0px; /*espaçamento entre letras*/
+	word-spacing: 1px; /*espaçamento entre palavras*/
+	background-color: #ffffff;
+	color: #e5efe0;
+	float:center;
+}
+
+
+#topo{
+	width:960px;
+	height:100px;
+	
+	margin:auto;
+}
+
+#logo{
+	width:321px;
+	height:95px;
+	position:relative;
+	top:-9px;
+	left:225px;
+}
+
+#menu{
+	float:right;
+	margin-top:55px;
+	margin-right:165px;
+}
+
+#menu a{
+	color:#000;
+	font-weight:;
+	font-family:SF New Republic SC;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px 20px 10px 20px;
+}
+
+#menu a:hover{
+	font-weight:bold;
+	color:#fff;
+	background-color:#000;
+}
+
+#menu2{
+	float:left;
+	margin-top:0px;
+	background-image:url(img/fundopreto.jpg);
+	width:920px;
+	height:55px;
+}
+
+#menu2 a{
+	color:#ffffff;
+	font-family:Arial;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px 20px 10px 20px;
+}
+
+#menu2 a:hover{
+	font-weight:none;
+	color:#bf0303;
+	background-color:#ffffff;
+}
+
+#container{
+	width:920px;
+	height:auto;
+	display:table;
+	margin:10px auto;
+	background-color:#00000;
+	background-color:#FFFFFF;
+	
+}
+
+#banner{
+	width:920px;
+	height:300px;
+	/*background-color:#666666;*/
+	float:left;
+}
+
+#conteudo{
+	
+	width:920px;
+	height:50px;
+	float:left;
+	/**background-color:#CCCCCC;*/
+
+}
+#img1{
+width:300;
+height:190;
+margin-top:50px;
+margin-left:4px;
+border:solid 1px #000000;
+float:left;
+}
+
+
+#img2{
+width:300;
+height:190;
+margin-top:50px;
+margin-left:5px;
+border:solid 1px #000000;
+float:left;
+}
+
+#img3{
+width:300;
+height:190;
+margin-top:50px;
+margin-left:5px;
+border:solid 1px #000000;
+float:left;
+}
+
+
+
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+}
+
+h3{
+	font-family:verdana;
+	font-size:18px;
+}
+
+h4{
+	font-size:14px;
+	margin-top:10px;
+	float:center;
+}
+
+.saibamais{
+	color:#7EBF0F;
+	font-size:12px;
+	text-decoration:none;
+}
+
+#form{
+	font-size:10px;
+	color:#f5f5f5;
+	float:right;	
+
+	color:#FFFFFF;
+	font-family:verdana;
+	text-decoration:none;
+	display:inline-block;
+	padding:10px;
+}
+
+input[type=text]{
+	width:150px;
+	border:solid 1px #CCCCCC;
+	margin-bottom:5px;
+}
+
+#rodape{
+    width:920px;
+	height:40px;
+	background-color:#000000;
+	float:left;	
+	margin-top:20px;
+}
+#box1,#box2,#box3,#box4,#box5,#box6,#box7,#box8,#box9,#box11,#box12,#box13{
+	margin-left:5px;
+	width:200px;
+	min-height:200px;
+	float:left;
+	border: 1px solid #000;
+	padding:0px;
+
+	/*background-color:#666666;*/
+}
+
+#box2{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box3{
+margin-left:35px;
+margin-bottom:10px;
+	
+}
+
+#box4{
+margin-left:35px;
+margin-bottom:10px;
+
+}
+
+#box5{
+margin-bottom:10px;
+margin-bottom:10px;
+}
+
+#box6{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box7{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box8{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box9{
+margin-bottom:10px;
+}
+
+
+#box11{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box12{
+margin-left:35px;
+margin-bottom:10px;
+}
+
+#box13{
+margin-left:35px;
+margin-bottom:10px;
+}
+.zoom{
+	overflow:hidden;
+}
+.zoom img{
+	max-width:100%;
+	-moz-transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	transition:all 0.3s;
+}
+.zoom:hover img{
+	-moz-transform:scale(1.1);
+	-webkit-transform:scale(1.1);
+	transform:scale(1.1);
+}
